@@ -1,6 +1,19 @@
 # Scripts for TamperMonkey
 
-## Zhihu tweaker
+## Commands
+
+```sh
+# Build all scripts under `src/`
+npm run build
+```
+
+```sh
+# Build single script
+npm run compileIntoSingleFile path/to/script
+```
+
+## User scripts
+### Zhihu tweaker
 
 - 移除生成的关键词搜索链接蓝字高亮
 - 移除重定向
@@ -9,7 +22,7 @@
 - 问题页面 显示 "查看问题日志" 按钮, 提问者, 问题创建时间和最后修改时间
 - 咨询页面 显示 "打开对话页面" 按钮
 
-## PlaybackRate Controller
+### PlaybackRate Controller
 
 目前仅支持B站
 
