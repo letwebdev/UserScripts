@@ -18,7 +18,7 @@ export function removeAutoGenerantedKeywordLinks() {
 
 export function substituteRedirectionLinks() {
   const linksToRemoveRedirection = document.querySelectorAll(
-    "a[href^='https://link.zhihu.com/?target='], a[href^='link.zhihu.com/?target=']"
+    "a[href^='https://link.zhihu.com/?target='], a[href^='http://link.zhihu.com/?target=']"
   ) as NodeListOf<HTMLAnchorElement>
   linksToRemoveRedirection.forEach((linkToRemoveRedirection) => {
     const urlWithRedirection = linkToRemoveRedirection.href
@@ -28,7 +28,7 @@ export function substituteRedirectionLinks() {
   function removeRedirection(url: string) {
     const urlRemovingRedirection = url
       .replace("https://link.zhihu.com/?target=", "")
-      .replace("link.zhihu.com/?target=", "")
+      .replace("http://link.zhihu.com/?target=", "")
     return decodeURIComponent(urlRemovingRedirection)
   }
 }

@@ -58,7 +58,7 @@ function removeAutoGenerantedKeywordLinks() {
     });
 }
 function substituteRedirectionLinks() {
-    const linksToRemoveRedirection = document.querySelectorAll("a[href^='https://link.zhihu.com/?target='], a[href^='link.zhihu.com/?target=']");
+    const linksToRemoveRedirection = document.querySelectorAll("a[href^='https://link.zhihu.com/?target='], a[href^='http://link.zhihu.com/?target=']");
     linksToRemoveRedirection.forEach((linkToRemoveRedirection) => {
         const urlWithRedirection = linkToRemoveRedirection.href;
         linkToRemoveRedirection.href = removeRedirection(urlWithRedirection);
@@ -66,7 +66,7 @@ function substituteRedirectionLinks() {
     function removeRedirection(url) {
         const urlRemovingRedirection = url
             .replace("https://link.zhihu.com/?target=", "")
-            .replace("link.zhihu.com/?target=", "");
+            .replace("http://link.zhihu.com/?target=", "");
         return decodeURIComponent(urlRemovingRedirection);
     }
 }
