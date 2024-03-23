@@ -33,6 +33,7 @@ async function selectElementAsync(querySelector, options = {
 // @author       You
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.bilibili.com/bangumi/play/*
+// @match        https://www.bilibili.com/list/*
 // @grant        none
 // ==/UserScript==
 (async function () {
@@ -74,7 +75,7 @@ async function selectElementAsync(querySelector, options = {
     function enableHoldingDownToControlPlaybackRate() {
         window.addEventListener("keydown", (event) => {
             switch (event.key) {
-                case "r": {
+                case "a": {
                     video.playbackRate = 4;
                     break;
                 }
@@ -84,7 +85,7 @@ async function selectElementAsync(querySelector, options = {
         }, true);
         window.addEventListener("keyup", (event) => {
             switch (event.key) {
-                case "r":
+                case "a":
                     video.playbackRate = video.basePlaybackRate;
                     break;
                 default:

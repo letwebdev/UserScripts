@@ -13,6 +13,7 @@ npm run compileIntoSingleFile path/to/script
 ```
 
 ## User scripts
+
 ### Zhihu tweaker
 
 - 移除生成的关键词搜索链接蓝字高亮
@@ -28,4 +29,4 @@ npm run compileIntoSingleFile path/to/script
 
 - 按`s`调整基础播放速度为1或2(默认为1)
 - 按`1-9`调整播放速度为相应倍速,再按一次恢复为基础播放速度
-- 按住`r`调整为4倍播放速度, 松开恢复为基础播放速度
+- 按住`a`调整为4倍播放速度, 松开恢复为基础播放速度

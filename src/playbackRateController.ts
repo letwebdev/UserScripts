@@ -6,6 +6,7 @@
 // @author       You
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.bilibili.com/bangumi/play/*
+// @match        https://www.bilibili.com/list/*
 // @grant        none
 // ==/UserScript==
 
@@ -61,7 +62,7 @@ import selectElementAsync from "./utils/selectElementAsync"
       "keydown",
       (event) => {
         switch (event.key) {
-          case "r": {
+          case "a": {
             video.playbackRate = 4
             break
           }
@@ -75,7 +76,7 @@ import selectElementAsync from "./utils/selectElementAsync"
       "keyup",
       (event) => {
         switch (event.key) {
-          case "r":
+          case "a":
             video.playbackRate = video.basePlaybackRate
             break
           default:
