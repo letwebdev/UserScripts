@@ -1,15 +1,19 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "auto-imports.d.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     /* Language and Environment */
     "target": "ESNext",
     "lib": ["ESNext", "DOM","DOM.Iterable"],
     "outDir": "./dist" ,
+	"paths": {
+	"@/*": ["./src/*"]
+  },
 
     /* Modules */
     "module": "ESNext",
     "moduleResolution": "Bundler",
+	"moduleDetection": "force",
     // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */

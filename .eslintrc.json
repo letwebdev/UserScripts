@@ -12,6 +12,9 @@
   "rules": {
     "no-extra-semi": "off",
     "@typescript-eslint/no-extra-semi": "off",
-    "no-inner-declarations": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-inner-declarations": "off",
+    "no-constant-condition": ["error", { "checkLoops": false }]
   }
 }
