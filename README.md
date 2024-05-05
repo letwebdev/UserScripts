@@ -7,16 +7,17 @@
 ## Commands
 
 ```sh
-# Build all scripts under `src/`
+# Build `src/*.ts`
 npm run build
 ```
 
 ```sh
 # Build specified scripts
-npm run compileIntoSingleFile path/to/script1.ts path/to/script2.ts
+npm run compileIntoSingleFile src/script1.ts src/script2.ts
 ```
 
 ```sh
 # install specified scripts
-npm run installScript path/to/script1.ts path/to/script2.ts
+npm run installScript src/script1.ts dist/script2_bundled.user.js
 ```
+
