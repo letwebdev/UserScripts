@@ -1,5 +1,9 @@
 # UserScripts for TamperMonkey
 
+- [Bundled scripts](https://github.com/letwebdev/UserScripts/tree/main/dist)
+- [Source scripts](https://github.com/letwebdev/UserScripts/tree/main/src)
+    - [Util scripts](https://github.com/letwebdev/UserScripts/tree/main/src/utils)
+
 ## Commands
 
 ```sh
