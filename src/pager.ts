@@ -19,9 +19,11 @@ async function getNextPage() {
   const elementForNextPage = document.createElement("div")
   elementForNextPage.innerHTML = contentOfNextPage
   const resultList = elementForNextPage.querySelector("#b_results")!
-  const relativeSearches = resultList.querySelector(".b_ans")!
+  const relativeSearches = resultList.querySelector(".b_ans")
   _debugger.log(relativeSearches)
-  resultList.removeChild(relativeSearches)
+  if (relativeSearches) {
+    resultList.removeChild(relativeSearches)
+  }
 
   document.body.append(resultList)
 }
